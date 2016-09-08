@@ -1,0 +1,153 @@
+
+@import url(http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicWeb);
+
+* { font-family: 'NanumGothic', '나눔고딕','NanumGothicWeb', '맑은 고딕', 'Malgun Gothic', Dotum; }
+
+/* Global reset
+   http://meyerweb.com/eric/tools/css/reset/ 
+*****************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+/* Extended base styles (site specific)
+*****************************************************************/
+
+html { overflow-y: scroll; /* always force a scrollbar in non-IE */}
+body {overflow-x: hidden; height: 4550px; line-height: 1.5; color: #000; font-size: 14px;}
+h1 {color: #fff;}
+a, a:link,
+a:active,
+a:visited {text-decoration:none;}
+a:hover { color:#000;}
+img { display:block;}
+p { margin:1em 0;}
+
+/* Common shared styles
+*****************************************************************/
+
+/* @font-face {
+	font-family:NanumBarunGothic;
+	font-weight:normal;
+	src:url('../font/NanumBarunGothic.eot');
+	src:local('NanumBarunGothic'), local('나눔바른고딕'),
+		url('../font/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+		url('../font/NanumBarunGothic.woff') format('woff');
+}
+@font-face {
+	font-family:NanumBarunGothic;
+	font-weight:bold;
+	src:url('../font/NanumBarunGothicBold.eot');
+	src:local('NanumBarunGothicBold'), local('나눔바른고딕'),
+		url('../font/NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),
+		url('../font/NanumBarunGothicBold.woff') format('woff');
+} */
+
+
+
+/* Page structure
+*****************************************************************/
+
+#wrapper {overflow-y: hidden; position: relative; background-image:url(../img/bg_main.jpg); background-repeat: no-repeat; background-size:cover; width:100%; height:100%;}
+#branding { width: 100%; background: #fff; }
+#branding h1 { width: 940px; padding: 10px 15px; margin: 0 auto; text-transform: uppercase; font-size: 18px; font-weight: bold;}
+
+/* Nav
+*****************************************************************/
+
+nav#primary { z-index: 9999; position: fixed; top: 50%; right: 16px; margin-top: -40px;}
+nav#primary li { position: relative; height: 20px; }
+nav#primary a { display: block;width: 20px;height: 20px;text-indent: -9999px;background: transparent url('../img/nav-dot.png') 4px 4px no-repeat;}
+nav#primary a:hover, nav#primary a.active { background: transparent url('../img/nav-dot.png') 4px -16px no-repeat;}
+nav#primary h2 { position: absolute; right: 22px; top: -7px; display: none; padding: 4px 20px 4px 7px; color: #fff; white-space: nowrap; background: transparent url('../img/nav-arrow.png') 100% 50% no-repeat; }
+
+/* Parallax
+*****************************************************************/
+
+/* content */
+#content { z-index: 4; position: relative; margin: 0 auto; line-height: 1.7; }
+#content { position: absolute; width: 100%; /* padding: 105px 30px 65px 30px; */ padding-bottom:500px;}
+#content section { position:absolute; width:100%;/*  height:250px; */ padding:50px 0; }
+#content .inner-section { max-width:940px; margin: 0 auto;}
+#content .inner-section header { color:#000;}
+#content .inner-section header h1 { margin: 0 0 25px 0; font-size: 60px; font-weight: normal; line-height: 65px; }
+#content .inner-section .description { }
+#content .inner-section .description dt,dd { display: inline-block; color:#fff;}
+#content .inner-section .element-hide { position:absolute;top:-9999px;right:-9999px; font-size:0; line-height: 0;}
+#content .inner-section .btn-site { width:90px;  margin-top:20px; text-align: center; line-height:34px; border:2px solid #222; border-radius: 3px; background-color:transparent; color:#666;}
+#content .inner-section .btn-site .link-site { display: inline-block; color:#222; font-weight:bold; }
+#content .inner-section .btn-site:hover { background-color:#000; color:#fff; border:2px solid #000;}
+#content .inner-section .btn-site:hover .link-site { color:#fff;}
+
+#visitkorea-article {  top:200px; background-color:#1c3f69;}
+#smc-article {  top: 1000px; background-color: #46c3c3; }
+#smc-eng-article {  top: 2100px; background-color:#155cac;}
+#hospia-article {  top: 3000px; background-color:#d66176; }
+#jck-article {  top:4000px; background-color:#009fc6;}
+
+#parallax-bg3 { z-index: 99; position: fixed; left: 50%; top: 0; width: 940px; margin-left: -470px;}
+	/* web */
+	#bg3-1 { position: absolute; top: 145px; left: 311px; }
+	#bg3-2 { position: absolute; top: 785px; left: 380px; }
+	#bg3-3 { position: absolute; top: 1645px; left: 403px; }
+	#bg3-4 { position: absolute; top: 2313px; left: 403px; }
+	#bg3-5 { position: absolute; top: 3100px; left: 403px; }
+
+#parallax-bg2 { z-index: 2; position: fixed; left: 50%; top: 0; width: 1200px; margin-left: -600px; }
+/* flower */
+	#bg2-1 { position: absolute; top: 162px; left: 200px; }
+	#bg2-2 { position: absolute; top: 300px; left: 1150px; }
+	#bg2-3 { position: absolute; top: 543px; left: -35px; }
+	#bg2-4 { position: absolute; top: 1180px; left: 250px; }
+	#bg2-5 { position: absolute; top: 900px; left: 890px; }
+
+#parallax-bg1 { z-index: 1; position: fixed; left: 50%; top: 0; width: 1200px; margin-left: -600px; }
+	#bg1-1 { position: absolute; top: 85px; left: -270px; }
+	#bg1-2 { position: absolute; top: 440px; left: 795px; }
+	#bg1-3 { position: absolute; top: 900px; left: -220px; }
+	#bg1-4 { position: absolute; top: 1020px; left: 450px; }
+
+	/**************************************** GRID RESPONSIVE ****************************************/
+@media screen and ( max-width:1280px){ 
+
+	#wrapper { background-size:auto;}
+	#bg3-1 { left: 311px; }
+	#bg3-2 { left: 320px; }
+	#bg3-3 { left: 300px; }
+	#bg3-4 { left: 300px; }
+	#bg3-5 { left: 300px; }
+
+	}
+
+
+
