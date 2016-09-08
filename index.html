@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Index 반디스 재구축</title>
+	<style type="text/css">
+		body {margin: 0; padding: 5px;}
+		body * {font-family: 'Malgun Gothic','dotum';}
+		h1 {margin: 20px;}
+		h1 span { font-size:14px; color:coral;}
+		table {border-collapse: collapse; width: 100%; table-layout: fixed; border:1px solid #ddd;}		
+		th {background: #eee; border: 1px solid #ddd; font-size: 11px; color: #333; padding: 3px 0 2px 0; text-align: center; font-weight: normal;}
+		td {background: #fff; border: 1px solid #ddd; font-size: 11px; text-align: left; padding: 4px; color: #333;}
+		td.linetitle {background: #dec; color: #000; padding: 5px 5px 3px 5px;}
+		a {color: #333; text-decoration: none; font-size:11px;}
+		a:hover {color: #aaa; text-decoration: underline;}
+		.center {text-align: center;}
+
+
+	#tabs {padding: 20px;}
+	#tabs ul {margin: 0; padding: 0; width: 100%; text-align: center;}
+	#tabs ul > li {list-style-type: none; display: inline-block; vertical-align: middle; width: 26%; padding: 8px 0; border: 1px solid #ddd; border-radius: 4px; margin-left: 4px; font-size: 13px; cursor: pointer;}
+	#tabs ul > li:first-child {margin-left: 0;}
+	#tabs ul > li.tabActiveHeader {font-weight: bold;}
+	.txtC {text-align: center;}
+	.grayTr td {background: #ddd;}
+	#tabs ul > li#tabHeader_1.tabActiveHeader {background: #b9cab5; border: 1px solid #b9cab5;}
+	#tabs ul > li#tabHeader_2.tabActiveHeader {background: #d5bdaa; border: 1px solid #d5bdaa;}
+	</style>
+	<script type="text/javascript">
+		var no = 0;
+		function viewlist(date, title, url, notice, history) {
+			no = no + 1;
+			document.write("<tr><td class='center'>"+no+"</td><td class='ac'>"+date+"</td><td>"+title+"</td><td><nobr><a href='"+url+"' target='_blank'>"+url+"</a></nobr></td><td>"+notice+"</td><td>"+history+"</td></tr>");  
+		}
+		function viewtitle(title) {
+			document.write("<tr><td colspan='6' class='linetitle'>"+title+"</td></tr>");
+		}
+	</script>
+</head>
+
+<body>
+	<h1>반디스  HTML Coding Files <span>last update: 2016-09-05</span></h1>
+	<div id="tabContainer">
+	<div id="tabs">
+		<ul>
+			<li id="tabHeader_1">Front</li>
+			<!-- <li id="tabHeader_2">Mobile</li> -->
+		</ul>
+	</div>
+	<div id="tabscontent">
+		<div class="tabpage" id="tabpage_1">
+			<table class="front">
+				<colgroup>
+					<col style="width: 5%;">
+					<col style="width: 10%;">
+					<col style="width: 15%;">
+					<col style="width: 10%;">
+					<col style="width: 20%;">
+					<col style="width: 20%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>no</th>
+						<th>date</th>
+						<th>title</th>
+						<th>url</th>
+						<th>notice</th>
+						<th>history</th>
+					</tr>
+				</thead>
+				<tbody>
+					<script type="text/javascript">	
+						
+						viewtitle("Main");
+						viewlist('2016-08-26','main', 'main/main.html', '', '0826 메인 전체수정건 반영');
+						viewlist('2016-00-0','login', 'bbs/login.html', '', '');
+						
+						viewtitle("01.분석보고서");
+						viewlist('2016-00-00','정치', '', '', '');
+						viewlist('2016-00-00','외교(북핵)', '', '', '');
+						viewlist('2016-00-00','대남', '', '', '');
+						viewlist('2016-00-00','군사', '', '', '');
+						viewlist('2016-00-00','경제과학', '', '', '');
+						viewlist('2016-00-00','사회문화', '', '', '');
+						viewlist('2016-00-00','인프라', '', '', '');
+
+						viewtitle("02.방송");
+						viewlist('2016-00-00','북한방송주요논조', '', '', '');
+						viewlist('2016-00-00','북한방송원문자료', '', '', '');
+						viewlist('2016-00-00','라디오방송일지', '', '', '');
+						viewlist('2016-00-00','한반도주요동향', '', '', '');
+						viewlist('2016-00-00','북한TV편성표', '', '', '');
+						viewlist('2016-00-00','영상자료', '', '', '');
+
+						viewtitle("03.신문");
+						viewlist('2016-00-00','영상자료', '', '', '');
+						viewlist('2016-00-00','조선중앙통신', '', '', '');
+						viewlist('2016-00-00','조선신보', '', '', '');
+						viewlist('2016-00-00','민주조선', '', '', '');
+						viewlist('2016-00-00','문학신문', '', '', '');
+						viewlist('2016-00-00','통일신보', '', '', '');
+						viewlist('2016-00-00','평양타임즈', '', '', '');
+						viewlist('2016-00-00','북한경제뉴스', '', '', '');
+						viewlist('2016-00-00','기타', '', '', '');
+
+						viewtitle("04.동영상");
+						viewlist('2016-00-00','동영상', '', '', '');
+
+						viewtitle("05.이미지");
+						viewlist('2016-00-00','이미지', '', '', '');
+						
+						viewtitle("06.북한간행물");
+						viewlist('2016-00-00','김일성 저작집 &middot; 김정일 선집', '', '', '');
+						viewlist('2016-00-00','김정일  &middot; 김일성 연설문', '', '', '');
+						viewlist('2016-00-00','북한법령집', '', '', '');
+						viewlist('2016-00-00','북한서적', '', '', '');
+						viewlist('2016-00-00','북한교과서', '', '', '');
+						viewlist('2016-00-00','북한저널', '', '', '');
+
+						viewtitle("07.북한사전");
+						viewlist('2016-00-00','조선대백과사전', '', '', '');
+						viewlist('2016-00-00','북한사전', '', '', '');
+						viewlist('2016-00-00','북한영문표기', '', '', '');
+						viewlist('2016-00-00','남북한 언어비교', '', '', '');
+						viewlist('2016-00-00','북한속담', '', '', '');
+						viewlist('2016-00-00','북한은어', '', '', '');
+						viewlist('2016-00-00','지역정보', '', '', '');
+					
+
+						viewtitle("08.웹수집자료");
+						viewlist('2016-00-00','언론기관', '', '', '');
+						viewlist('2016-00-00','유관기관', '', '', '');
+						viewlist('2016-00-00','학술기관', '', '', '');
+						viewlist('2016-00-00','국제기구', '', '', '');
+						viewlist('2016-00-00','기타', '', '', '');
+
+						viewtitle("09.VIP비난통계");
+						viewlist('2016-09-02','일별 VIP 비난통계', 'bbs/UI_BDSPT_0601.html', '34p', '');
+						viewlist('2016-09-02','월별 VIP 비난통계', 'bbs/UI_BDSPT_0602.html', '35p', '');
+						viewlist('2016-00-00','VIP 비난통계조회 - 리스트', 'bbs/UI_BDSPT_0603.html', '', '전달완료');
+						viewlist('2016-00-00','VIP 비난통계조회 - 상세보기', 'bbs/UI_BDSPT_0604.html', '', '전달완료');
+
+						viewtitle("10.역사속 북한의 오늘");
+						viewlist('2016-00-00','기간별 북한약사', 'bbs/UI_BDSPT_2001.html', '', '전달완료');
+						viewlist('2016-00-00','월별 북한약사', 'bbs/UI_BDSPT_2003.html', '달력구조', '전달완료');
+						viewlist('2016-00-00','북한약사검색', 'bbs/UI_BDSPT_2004.html', '', '전달완료');
+						viewlist('2016-00-00','북한약사검색', '삭제', '삭제', '삭제');
+
+						viewtitle("11.보관함");
+						viewlist('2016-00-00','보관함', 'bbs/UI_BDSPT_0401.html', '트리구조', '전달완료');
+
+						viewtitle("12.비밀번호변경");
+						viewlist('2016-00-00','비밀번호변경', 'bbs/UI_BDSPT_0501.html', '', '전달완료');
+
+						viewtitle("12.헬프데스크");
+						viewlist('2016-08-00','헬프데스크 - 리스트', 'bbs/UI_BDSPT_0201.html', '', '전달완료');
+						viewlist('2016-09-02','헬프데스크 - 상세보기', 'bbs/UI_BDSPT_0202.html', '28p', '');
+						viewlist('2016-08-00','헬프데스크 - 등록', 'bbs/UI_BDSPT_0203.html', '', '전달완료');
+
+						viewtitle("13.필수프로그램");
+						viewlist('2016-00-00','필수프로그램 - 리스트', 'bbs/UI_BDSPT_0301.html', '', '전달완료');
+						viewlist('2016-00-00','필수프로그램 - 상세보기', 'bbs/UI_BDSPT_0302.html', '', '전달완료');
+						viewlist('2016-08-30','필수프로그램 - 설치안내', 'bbs/UI_BDSPT_0901_add.html', '', '0830 추가작업');
+
+						viewtitle("14.통합검색");
+						viewlist('2016-00-00','통합검색', '', '', '');
+						viewlist('2016-08-23','보고서', 'bbs/UI_BDSPT_0106_report.html', '', '전달완료<br>0830 탭디자인수정');
+						viewlist('2016-00-00','북한인물', 'bbs/UI_BDSPT_0106_person.html', '', '전달완료<br>0830 탭디자인수정');
+						viewlist('2016-00-00','북한조직', '', 'SB 없음', '');
+						viewlist('2016-00-00','북한방송', 'bbs/UI_BDSPT_0106_broadcast.html', '', '전달완료<br>0830 탭디자인수정');
+						viewlist('2016-00-00','북한신문', 'bbs/UI_BDSPT_0106_paper.html', '', '전달완료<br>0830 탭디자인수정');
+						viewlist('2016-00-00','웹수집자료', 'bbs/UI_BDSPT_0106_web.html', '', '전달완료<br>0830 탭디자인수정');
+						viewlist('2016-00-00','남북회담행사', 'bbs/UI_BDSPT_0106_event.html', '', '전달완료<br>0830 탭디자인수정');
+						viewlist('2016-00-00','북한간행물', 'bbs/UI_BDSPT_0106_publication.html', '', '전달완료<br>0830 탭디자인수정');
+						viewlist('2016-00-00','북한사전', 'bbs/UI_BDSPT_0106_dictionary.html', '', '전달완료<br>0830 탭디자인수정');
+						viewlist('2016-00-00','북한지도', 'bbs/UI_BDSPT_0106_map.html', '', '전달완료<br>0830 탭디자인수정');
+						viewlist('2016-00-00','동영상', 'bbs/UI_BDSPT_0106_result_media.html', '', '전달완료');
+						viewlist('2016-00-00','이미지', 'bbs/UI_BDSPT_0106_result_photo.html', '', '전달완료');
+
+						viewlist('2016-00-00','보고서 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+						viewlist('2016-00-00','북한인물 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+						viewlist('2016-00-00','북한조직 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+						viewlist('2016-00-00','북한방송 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+						viewlist('2016-00-00','북한신문 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+						viewlist('2016-00-00','웹수집자료 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+						viewlist('2016-00-00','남북회담행사 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+						viewlist('2016-00-00','북한간행물 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+						viewlist('2016-00-00','북한사전 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+						viewlist('2016-00-00','북한지도 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+						viewlist('2016-00-00','동영상/이미지 - 검색결과', 'bbs/UI_BDSPT_0106_result.html', '통합검색 페이지 리스트', '전달완료');
+
+						viewtitle("15.관리자");
+						viewlist('2016-09-02','메뉴관리', 'bbs/UI_BDSPT_0701.html', '42p', '');
+						viewlist('2016-00-00','헬프데스크 - 리스트', 'bbs/UI_BDSPT_0801.html', '', '전달완료');
+						viewlist('2016-00-00','헬프데스크 - 수정및등록', 'bbs/UI_BDSPT_0802.html', '', '전달완료');
+						viewlist('2016-00-00','필수프로그램 - 리스트', 'bbs/UI_BDSPT_0901.html', '', '전달완료');
+						viewlist('2016-00-00','필수프로그램 - 상세보기', 'bbs/UI_BDSPT_0902.html', '', '전달완료');
+						viewlist('2016-00-00','필수프로그램 - 수정및등록', 'bbs/UI_BDSPT_0903.html', '', '전달완료');
+						viewlist('2016-00-00','북한자료 분류관리', 'bbs/UI_BDSPT_1001.html', '트리구조', '전달완료');
+						viewlist('2016-00-00','북한자료 복원 - 리스트', 'bbs/UI_BDSPT_1101.html', '', '전달완료');
+						viewlist('2016-00-00','북한자료 복원 - 상세보기', 'bbs/UI_BDSPT_1102.html', 'SB상으로 1101로 표시되어있음', '전달완료');
+						viewlist('2016-00-00','북한자료 이력검색', 'bbs/UI_BDSPT_1201.html', '', '전달완료');
+						viewlist('2016-00-00','통계현황-페이지뷰현황', 'bbs/UI_BDSPT_1301.html', '', '');
+						viewlist('2016-00-00','통계현황-사이트뷰현황(일별)', 'bbs/UI_BDSPT_1302.html', '임의 디자인(링크탭, 막대그래프)', '');
+						viewlist('2016-00-00','통계현황-사이트뷰현황(월별)', 'bbs/UI_BDSPT_1303.html', '임의 디자인(링크탭, 막대그래프)', '');
+						viewlist('2016-00-00','통계현황-사이트뷰현황(연별)', 'bbs/UI_BDSPT_1304.html', '임의 디자인(링크탭, 막대그래프)', '');
+						viewlist('2016-00-00','통계현황-문서등록현황', 'bbs/UI_BDSPT_1305.html', '', '');
+						viewlist('2016-00-00','VIP비난통계관리목록', 'bbs/UI_BDSPT_1401.html', '', '');
+						viewlist('2016-00-00','VIP비난통계관리목록 - 상세보기', 'bbs/UI_BDSPT_1402.html', '', '');
+						viewlist('2016-00-00','VIP비난통계관리목록 - 등록/수정', 'bbs/UI_BDSPT_1403.html', '', '');
+						viewlist('2016-00-00','북한약사관리 목록', 'bbs/UI_BDSPT_1404.html', '', '');
+						viewlist('2016-00-00','북한약사관리 등록/수정', 'bbs/UI_BDSPT_1405.html', '', '');
+
+						viewtitle("16.북한인물");
+						viewlist('2016-00-00','', '', '', '');
+
+						viewtitle("17.통계정보");
+						viewlist('2016-00-00','', '', '', '');
+
+						viewtitle("18.심층면접");
+						viewlist('2016-00-00','', '', '', '');
+
+						viewtitle("19.GIS");
+						viewlist('2016-00-00','', '', '', '');
+
+						viewtitle("20.주제연관성");
+						viewlist('2016-00-00','', '', '', '');
+
+
+						/* 임의 인덱스 리스트 */
+						viewtitle("20.기본문서");
+						viewlist('2016-09-02','정치 - 등록', 'bbs/UI_BDSPT_1601.html', '72p', '');
+						viewlist('2016-09-02','정치 - 상세보기1(등록정보)', 'bbs/UI_BDSPT_0103.html', '73p - 탭 구조', '');
+						viewlist('2016-09-02','정치 - 상세보기2(문서이력)', 'bbs/UI_BDSPT_0103.html', '74p - 탭 구조', '');
+
+						viewtitle("20.분석보고서");
+						viewlist('2016-00-00','정치 - 리스트', 'bbs/UI_BDSPT_1501.html', '62p', '');
+						viewlist('2016-09-02','정치 - 상세보기', 'bbs/UI_BDSPT_0103_view.html', '75p', '');
+						viewlist('2016-08-16','정치 - 상세보기(외부보기)', 'bbs/UI_BDSPT_0103_view.html', '76p', '');
+
+
+						viewtitle("20.동향보고서");
+						viewlist('2016-00-00','일일동향 - 리스트', 'bbs/UI_BDSPT_1501.html', '63p', '');
+						viewlist('2016-08-17','일일동향 - 등록', 'bbs/UI_BDSPT_0103_2.html', '77p', '');
+						viewlist('2016-08-17','월간동향 - 등록', 'bbs/UI_BDSPT_0103_2.html', '78p', '');
+
+						viewtitle("20.업무관련보고서");
+						viewlist('2016-00-00','통일정책 - 리스트', 'bbs/UI_BDSPT_1501.html', '64p', '');
+
+						viewtitle("20.북한관련보고서");
+						viewlist('2016-00-00','출장보고서 - 리스트', 'bbs/UI_BDSPT_1501.html', '65p', '');
+
+						viewtitle("20.방송");
+						viewlist('2016-00-00','라디오방송일지 - 리스트', 'bbs/UI_BDSPT_1501.html', '66p', '');
+						viewlist('2016-08-17','라디오방송일지 - 등록', 'bbs/UI_BDSPT_0103_2.html', '80p', '');
+						viewlist('2016-08-17','북한방송원문자료 - 등록', 'bbs/UI_BDSPT_0103_2.html', '79p', '');
+						viewlist('2016-08-17','북한TV편성표 - 등록', 'bbs/UI_BDSPT_0103_3.html', '81p', '목록추가 버튼 있음');
+						viewlist('2016-08-17','영상자료 - 등록', 'bbs/UI_BDSPT_0103_2', '82p', '');
+
+						viewtitle("20.신문");
+						viewlist('2016-00-00','노동신문 - 리스트', 'bbs/UI_BDSPT_1501.html', '67p', '');
+						viewlist('2016-08-17','노동신문 - 등록', 'bbs/UI_BDSPT_0103_2', '83p', '');
+
+						viewtitle("20.웹수집자료");
+						viewlist('2016-00-00','정치 - 리스트', 'bbs/UI_BDSPT_1501.html', '68p', '');
+
+						viewtitle("20.북한자료센터");
+						viewlist('2016-00-00','조선대백과사전 - 리스트', 'bbs/UI_BDSPT_1501.html', '69p', '');
+
+						viewtitle("20.동영상");
+						viewlist('2016-09-06','동영상', 'bbs/UI_BDSPT_1502.html', '70p', '');
+
+						viewtitle("20.이미지");
+						viewlist('2016-09-06','이미지', 'bbs/UI_BDSPT_1503.html', '71p', '');
+
+					</script>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+	window.onload=function() {
+		var container = document.getElementById("tabContainer");
+		var tabcon = document.getElementById("tabscontent");
+		var navitem = document.getElementById("tabHeader_1");
+		var ident = navitem.id.split("_")[1];
+
+		navitem.parentNode.setAttribute("data-current",ident);
+		navitem.setAttribute("class","tabActiveHeader");
+
+		var pages = tabcon.getElementsByTagName("div");
+		for (var i = 1; i < pages.length; i++) {
+			pages.item(i).style.display="none";
+		};
+		var tabs = container.getElementsByTagName("li");
+		for (var i = 0; i < tabs.length; i++) {
+			tabs[i].onclick=displayPage;
+		}
+	}
+
+	function displayPage() {
+		var current = this.parentNode.getAttribute("data-current");
+		document.getElementById("tabHeader_" + current).removeAttribute("class");
+		document.getElementById("tabpage_" + current).style.display="none";
+		var ident = this.id.split("_")[1];
+		this.setAttribute("class","tabActiveHeader");
+		document.getElementById("tabpage_" + ident).style.display="block";
+		this.parentNode.setAttribute("data-current",ident);
+	}
+	</script>
+</body>
+</html>
